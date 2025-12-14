@@ -1,0 +1,4 @@
+#NEXUS
+Begin trees;
+  tree tree1 = (tip1:1.0,tip2:1.0);
+End;

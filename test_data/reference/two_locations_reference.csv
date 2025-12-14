@@ -1,0 +1,2 @@
+"case","n_tips","n_locations","n_dispersal_events","distance_km","dispersal_kernel","rate_F12","rate_F21","rate_F11","rate_F22","sigma1","sigma2","lambda_comp"
+"two_locations",2,2,1,193.460882583786,0.182609894599033,0.0913049472995164,0.0913049472995164,0.5,0.5,1,1,1
