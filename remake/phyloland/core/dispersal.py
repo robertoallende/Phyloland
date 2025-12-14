@@ -38,6 +38,36 @@ class DispersalKernel:
         
         return kernel_matrix
         
+    def calculate_pairwise_distance(self, i, j):
+        """Calculate distance between two location indices
+        
+        Args:
+            i, j: Location indices
+            
+        Returns:
+            Distance in kilometers
+        """
+        lat1, lon1 = self.lats[i], self.lons[i]
+        lat2, lon2 = self.lats[j], self.lons[j]
+        
+        # Convert to radians
+        lat1_r = np.radians(lat1)
+        lat2_r = np.radians(lat2)
+        lon1_r = np.radians(lon1)
+        lon2_r = np.radians(lon2)
+        
+        # Great circle distance (same as R distkm)
+        dlon = lon2_r - lon1_r
+        dlat = lat2_r - lat1_r
+        a = np.sin(dlat/2)**2 + np.cos(lat1_r) * np.cos(lat2_r) * np.sin(dlon/2)**2
+        c = 2 * np.arcsin(np.sqrt(a))
+        
+        # Earth radius in km (same as R)
+        R = 6378.137
+        distance = R * c
+        
+        return distance
+        
     def calculate_pairwise(self, i, j, sigma1, sigma2):
         """Calculate single pairwise kernel value for validation/debugging
         
