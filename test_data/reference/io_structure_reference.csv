@@ -1,0 +1,4 @@
+"column","type","sample_value","row_count","col_count"
+"species","character","brunneaA",21,3
+"latitude","numeric","20.90532",21,3
+"longitude","numeric","156.6499",21,3
