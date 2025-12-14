@@ -65,12 +65,16 @@ class ParameterProposer:
         step1 = self.adaptive_proposer.step_sizes.get('sigma1', 0.1)
         step2 = self.adaptive_proposer.step_sizes.get('sigma2', 0.1)
         
-        # Log-space proposals to ensure positivity
-        log_sigma1 = np.log(current_sigma1)
-        log_sigma2 = np.log(current_sigma2)
+        # Log-space proposals to ensure positivity with bounds
+        log_sigma1 = np.log(max(current_sigma1, 1e-6))  # Prevent log(0)
+        log_sigma2 = np.log(max(current_sigma2, 1e-6))  # Prevent log(0)
         
         new_log_sigma1 = log_sigma1 + np.random.normal(0, step1)
         new_log_sigma2 = log_sigma2 + np.random.normal(0, step2)
+        
+        # Apply bounds to prevent extreme values
+        new_log_sigma1 = np.clip(new_log_sigma1, np.log(1e-6), np.log(100))
+        new_log_sigma2 = np.clip(new_log_sigma2, np.log(1e-6), np.log(100))
         
         return np.exp(new_log_sigma1), np.exp(new_log_sigma2)
         
@@ -78,8 +82,11 @@ class ParameterProposer:
         """Propose new competition parameter (log-space for positivity)"""
         step = self.adaptive_proposer.step_sizes.get('lambda', 0.1)
         
-        log_lambda = np.log(current_lambda)
+        log_lambda = np.log(max(current_lambda, 1e-6))  # Prevent log(0)
         new_log_lambda = log_lambda + np.random.normal(0, step)
+        
+        # Apply bounds to prevent extreme values
+        new_log_lambda = np.clip(new_log_lambda, np.log(1e-6), np.log(100))
         
         return np.exp(new_log_lambda)
         
@@ -87,8 +94,11 @@ class ParameterProposer:
         """Propose new rate parameter (log-space for positivity)"""
         step = self.adaptive_proposer.step_sizes.get('tau', 0.1)
         
-        log_tau = np.log(current_tau)
+        log_tau = np.log(max(current_tau, 1e-6))  # Prevent log(0)
         new_log_tau = log_tau + np.random.normal(0, step)
+        
+        # Apply bounds to prevent extreme values
+        new_log_tau = np.clip(new_log_tau, np.log(1e-6), np.log(100))
         
         return np.exp(new_log_tau)
         
