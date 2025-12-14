@@ -1,0 +1,4 @@
+"pair","from_idx","to_idx","kernel_value","rate_value"
+"brunneaA_brunneaB",1,2,1,0.119047619047619
+"brunneaA_kauaiensisA",1,5,9.72932987470676e-05,1.15825355651271e-05
+"deplanataA_nitidaA",3,15,0.0277764933187563,0.00330672539509004

@@ -1,0 +1,2 @@
+"case","n_locations","sigma1","sigma2","Lambda","matrix_size","min_rate","max_rate","diagonal_value","mean_row_sum","total_rate"
+"rate_matrix",21,0.5,0.8,2.5,441,8.28413151083681e-25,0.119047619047619,0.119047619047619,0.826176294056191,17.34970217518
