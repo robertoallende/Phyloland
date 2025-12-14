@@ -22,7 +22,7 @@ Production-ready Python implementation with full phyloland compatibility:
 
 ## Development Methodology
 
-**MMDD (Minimal Maximal Driven Development)**: Systematic approach ensuring machine-level precision through comprehensive validation against the original R implementation.
+**MMDD (Micromanaged Driven Development)**: Systematic documentation methodology that controls AI-assisted software development through granular task breakdown and chronological tracking.
 
 ## Quick Start
 
