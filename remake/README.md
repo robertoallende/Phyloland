@@ -141,7 +141,7 @@ dev_log/                    # Development documentation
 
 ## License
 
-[License information to be added]
+MIT
 
 ## Contributing
 
