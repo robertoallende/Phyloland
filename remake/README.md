@@ -13,7 +13,7 @@ This implementation provides a drop-in replacement for the phyloland R package, 
 
 ## MMDD Methodology
 
-**Minimal Maximal Driven Development** - Our systematic approach to achieving machine-level precision:
+**Micromanaged Driven Development** - Systematic documentation methodology that controls AI-assisted software development through granular task breakdown and chronological tracking:
 
 ### Core Principles
 1. **Minimal Implementation**: Start with simplest possible cases

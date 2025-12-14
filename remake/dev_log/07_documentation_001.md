@@ -42,7 +42,7 @@ Create comprehensive documentation for scientific evaluation and adoption. Provi
 **Purpose**: Implementation description and MMDD methodology
 **Content**:
 - Project description and scientific context
-- MMDD (Minimal Maximal Driven Development) methodology explanation
+- MMDD (Micromanaged Driven Development) methodology explanation
 - Key achievements (machine precision, phyloland compatibility)
 - Installation and quick start
 - Link to detailed documentation
