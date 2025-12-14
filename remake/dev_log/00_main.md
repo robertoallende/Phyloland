@@ -44,9 +44,11 @@ A Python package that replicates the functionality of the Phyloland R package, w
 - **Unit 03**: Base Cases (3 subunits) 
 - **Unit 04**: Neutral Dispersal (3 subunits)
 - **Unit 05**: Comprehensive R Validation (4 subunits)
+- **Unit 06**: Complete MCMC Engine (6 subunits)
+- **Unit 07**: Documentation & Scientific Communication (5 subunits)
 
 ### Units In Progress
-*None - ready for Units 6-8*
+*None - ready for Units 7-9*
 
 ## Planned Units
 
@@ -80,26 +82,36 @@ Complete validation against actual phyloland package
 - **05c**: Algorithm-level validation (machine precision)
 - **05d**: Banza reproduction framework
 
-### **06**: Complete MCMC Engine (4 subunits)
+### **06**: Complete MCMC Engine ✅ (6 subunits)
 Full Bayesian parameter estimation matching phyloland exactly
 - **06a**: Advanced parameter proposals (adaptive tuning, multiple parameters)
 - **06b**: Convergence diagnostics (ESS calculation, Rhat, trace analysis)
 - **06c**: Multiple chain support (parallel chains, chain mixing)
 - **06d**: Full PLD_interface() API (all parameters, stopping criteria)
+- **06e**: Integration verification (real dataset testing, bounds resolution)
+- **06f**: R tutorial validation & edge cases (comprehensive stress testing)
 
-### **07**: Analysis & Visualization (4 subunits)
+### **07**: Documentation & Scientific Communication ✅ (5 subunits)
+Complete documentation for scientific evaluation and adoption
+- **07a**: Root project README (discover vs remake explanation)
+- **07b**: Discover directory documentation (research phase inventory)
+- **07c**: Main implementation README (project description, MMDD methodology)
+- **07d**: User documentation (onboarding guide, API reference, migration guide)
+- **07e**: Scientific validation documentation (precision results, citation guide)
+
+### **08**: Analysis & Visualization (4 subunits) - PENDING
 Complete phyloland analysis toolkit matching R functionality
-- **07a**: Tree visualization (PLD_plot_trees equivalent)
-- **07b**: Ancestral location analysis (PLD_loc_mrca with barplots)
-- **07c**: Migration analysis (PLD_stat_mig, PLD_plot_stat_mig)
-- **07d**: Statistical summaries and reports
+- **08a**: Tree visualization (PLD_plot_trees equivalent)
+- **08b**: Ancestral location analysis (PLD_loc_mrca with barplots)
+- **08c**: Migration analysis (PLD_stat_mig, PLD_plot_stat_mig)
+- **08d**: Statistical summaries and reports
 
-### **08**: Production & User Experience (4 subunits)
+### **09**: Production & User Experience (4 subunits) - PENDING
 Complete R decommissioning with full feature parity
-- **08a**: Command-line interface (phyloland CLI matching R usage)
-- **08b**: File I/O compatibility (NEXUS, location files, output formats)
-- **08c**: Performance optimization (large datasets, memory management)
-- **08d**: Documentation & examples (tutorials, API docs, migration guide)
+- **09a**: Command-line interface (phyloland CLI matching R usage)
+- **09b**: File I/O compatibility (NEXUS, location files, output formats)
+- **09c**: Performance optimization (large datasets, memory management)
+- **09d**: Documentation & examples (tutorials, API docs, migration guide)
 
 ## Development Approach
 
