@@ -97,7 +97,7 @@ Complete documentation for scientific evaluation and adoption
 - **07b**: Discover directory documentation (research phase inventory)
 - **07c**: Main implementation README (project description, MMDD methodology)
 - **07d**: User documentation (onboarding guide, API reference, migration guide)
-- **07e**: Scientific validation documentation (precision results, citation guide)
+- **07e**: Scientific validation documentation (precision results)
 
 ### **08**: Analysis & Visualization (4 subunits) - PENDING
 Complete phyloland analysis toolkit matching R functionality

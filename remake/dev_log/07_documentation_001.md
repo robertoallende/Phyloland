@@ -89,14 +89,6 @@ Create comprehensive documentation for scientific evaluation and adoption. Provi
 - Comparison with phyloland R package
 - Performance benchmarks
 
-##### Citation Guide (`CITATION.md`)
-**Purpose**: Academic attribution
-**Content**:
-- How to cite the implementation
-- Reference to original phyloland paper
-- Academic attribution guidelines
-- Software licensing information
-
 ## Implementation Strategy
 
 ### Phase 1: Project Structure Documentation

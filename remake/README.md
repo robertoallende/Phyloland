@@ -139,10 +139,6 @@ docs/                       # Documentation
 dev_log/                    # Development documentation
 ```
 
-## Citation
-
-See `CITATION.md` for academic attribution guidelines.
-
 ## License
 
 [License information to be added]
