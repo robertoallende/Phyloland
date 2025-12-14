@@ -62,4 +62,4 @@ result = PLD_interface(
 
 ## License
 
-GPL-2
+MIT
