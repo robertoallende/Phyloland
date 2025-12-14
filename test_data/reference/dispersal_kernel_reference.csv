@@ -1,0 +1,2 @@
+"case","n_locations","sigma1","sigma2","matrix_size","min_kernel","max_kernel","diagonal_check"
+"dispersal_kernel",21,0.5,0.8,441,6.95867046910292e-24,1,TRUE
