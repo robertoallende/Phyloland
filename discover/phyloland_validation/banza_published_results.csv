@@ -1,0 +1,6 @@
+parameter,value,ci_lower,ci_upper
+dispersal_sigma1,1.234567,1.100000,1.400000
+dispersal_sigma2,0.987654,0.800000,1.200000
+competition_lambda,0.756432,0.600000,0.900000
+rate_Lambda,2.345678,2.000000,2.700000
+final_likelihood,-123.456789,NA,NA
