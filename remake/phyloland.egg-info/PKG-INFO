@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: phyloland
+Version: 0.1.0
+Summary: Bayesian phylogeographic inference with competition and dispersal
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: dendropy>=4.5.0
+Requires-Dist: pytest>=6.0.0
+Requires-Dist: pytest-cov>=2.12.0
+Requires-Dist: numba>=0.56.0
+Requires-Dist: matplotlib>=3.5.0
+Dynamic: classifier
+Dynamic: description
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Python implementation of the Phyloland R package for modeling competition and dispersal in a statistical phylogeographic framework.
