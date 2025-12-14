@@ -60,10 +60,6 @@ result = PLD_interface(
 - **Comprehensive Testing**: 58/58 tests including edge cases
 - **API Compatibility**: Complete phyloland parameter support
 
-## Citation
-
-If you use this implementation, please cite both this work and the original phyloland paper. See `remake/CITATION.md` for details.
-
 ## License
 
-[License information to be added]
+GPL-2
