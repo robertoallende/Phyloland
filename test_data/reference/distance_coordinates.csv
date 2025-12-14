@@ -1,0 +1,16 @@
+"name","lat","lon"
+"Oahu",21.3099,-157.8581
+"Maui",20.7984,-156.3319
+"Hawaii",19.8968,-155.5828
+"Kauai",22.0964,-159.5261
+"Molokai",21.1444,-157.0226
+"Equator1",1,0
+"Equator2",-1,0
+"Antimeridian1",0,179
+"Antimeridian2",0,-179
+"Pole1",89,0
+"Pole2",89,1
+"Origin",0,0
+"Close1",45.5,-122.5
+"Close2",45.5001,-122.5001
+"Antipodal",0,180
