@@ -86,12 +86,27 @@ remake/phyloland/core/
 2. **Unit planning**: Designed base cases following mathematical complexity
 3. **TDD strategy**: Established R-as-oracle validation approach
 
-## Status: Ready for Implementation
-**Next steps:**
-1. Create subunit 3.1: Single Location validation
-2. Generate R reference script for trivial case
-3. Write failing Python tests
-4. Implement basic likelihood framework
-5. Repeat for subunits 3.2 and 3.3
+## Status: Complete
+**Implementation Summary:**
+All 3 atomic subunits completed with passing validation tests:
 
-**Foundation goal**: Establish core phylogeographic calculation framework through systematic validation of simplest possible scenarios.
+- **3.1: Single Location** ✅ - Trivial case (likelihood = 1.0), basic framework established
+- **3.2: Two Locations** ✅ - Core dispersal mechanics (2×2 rate matrix, geographic distance, dispersal kernel)
+- **3.3: No Competition** ✅ - Multi-location framework (5×5 rate matrix, λ=1 constraint, Hawaiian islands)
+
+**Inductive Foundation Established:** Successfully validated phylogeographic inference from trivial cases to realistic multi-location scenarios. All Python calculations match R implementation exactly within numerical precision.
+
+**Files Created:**
+- 3 R reference generation scripts in `discover/test_scripts/`
+- 6 minimal test data files (trees, locations) in `test_data/minimal/`
+- 7 reference validation files in `test_data/reference/`
+- 3 comprehensive Python test suites in `remake/tests/test_base_cases/`
+- Complete base case implementations in `remake/phyloland/core/base_cases.py`
+
+**Mathematical Validation:**
+- Geographic distance calculation matches R distkm exactly
+- Dispersal kernel f(x,y) = exp(-Σ(xi-yi)²/2σi²) validated
+- Rate matrix construction Rij = Λ * Fij * δj with proper normalization
+- Multi-location framework ready for competition and MCMC integration
+
+**Key Achievement:** Established the **complete mathematical and software foundation** for phylogeographic inference through systematic inductive validation. Ready for Units 4-7 implementation.
