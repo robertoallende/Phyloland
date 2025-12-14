@@ -39,34 +39,28 @@ class DispersalKernel:
         return kernel_matrix
         
     def calculate_pairwise_distance(self, i, j):
-        """Calculate distance between two location indices
+        """Calculate distance between two location indices using phyloland distkm formula
         
         Args:
             i, j: Location indices
             
         Returns:
-            Distance in kilometers
+            Distance in kilometers (matches phyloland distkm exactly)
         """
         lat1, lon1 = self.lats[i], self.lons[i]
         lat2, lon2 = self.lats[j], self.lons[j]
         
-        # Convert to radians
-        lat1_r = np.radians(lat1)
-        lat2_r = np.radians(lat2)
-        lon1_r = np.radians(lon1)
-        lon2_r = np.radians(lon2)
+        # Use phyloland's exact distkm formula
+        lat1r = (lat1 / 180) * np.pi  # radian
+        lat2r = (lat2 / 180) * np.pi
+        long1r = (lon1 / 180) * np.pi
+        long2r = (lon2 / 180) * np.pi
         
-        # Great circle distance (same as R distkm)
-        dlon = lon2_r - lon1_r
-        dlat = lat2_r - lat1_r
-        a = np.sin(dlat/2)**2 + np.cos(lat1_r) * np.cos(lat2_r) * np.sin(dlon/2)**2
-        c = 2 * np.arcsin(np.sqrt(a))
+        # Phyloland formula: d = acos(sin(lat1r)*sin(lat2r) + cos(lat1r)*cos(lat2r)*cos(long2r-long1r)) * 6378.137
+        d = np.arccos(np.sin(lat1r) * np.sin(lat2r) + 
+                     np.cos(lat1r) * np.cos(lat2r) * np.cos(long2r - long1r)) * 6378.137
         
-        # Earth radius in km (same as R)
-        R = 6378.137
-        distance = R * c
-        
-        return distance
+        return d
         
     def calculate_pairwise(self, i, j, sigma1, sigma2):
         """Calculate single pairwise kernel value for validation/debugging
